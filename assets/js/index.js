@@ -14,7 +14,20 @@ const methods = [
 
 const fn = {
   at() {
-    console.log('at');
+    // Establish array and integer variables
+    const atArr = ["Apple", 3, "Green", 6, "Seven"];
+    const atInt1 = 2;
+    const atInt2 = -2;
+    // Use method to create solved solutions
+    const atSolved1 = atArr.at(atInt1);
+    const atSolved2 = atArr.at(atInt2);
+
+    // Create document elements to display example
+    const atP = document.createElement('p');
+    atP.innerHTML = `
+    With the example array, the method returns "${atSolved1}" when passing the integer, 2.
+    When using a negative integer (-2), the method returns "${atSolved2}".`
+    mainEl.append(atP);
   },
   
   concat() {
@@ -25,7 +38,7 @@ const fn = {
 function methodInfo(obj) {
   // Refreshes main element
   mainEl.innerHTML = null;
-  // Populates main with method title and description
+  // Populates main with method title, description, and subheading
   const title = document.createElement('h2');
   const description = document.createElement('p');
   const subheading = document.createElement('h3');
