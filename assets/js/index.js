@@ -16,6 +16,7 @@ const fn = {
   at() {
     console.log('at');
   },
+  
   concat() {
     console.log('concat');
   },
@@ -32,8 +33,7 @@ function methodInfo(obj) {
   mainEl.append(title, description);
   // Calls function to practice method and display example
   fn[obj.method]();
-
-}
+};
 
 function init() {
   // Refreshes navigation bar
@@ -44,8 +44,8 @@ function init() {
     navBtn.innerHTML = method.method;
     navBtn.classList = 'navBtn';
     navEl.append(navBtn);
-  })
-}
+  });
+};
 
 init();
 
@@ -55,6 +55,6 @@ navEl.addEventListener('click', (event) => {
     const method = event.target.innerHTML;
     const [methodObj] = methods.filter((item) => item.method === method);
     methodInfo(methodObj);
-  }
+  };
   return;
 });
