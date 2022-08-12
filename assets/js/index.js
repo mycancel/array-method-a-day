@@ -1,6 +1,23 @@
 const mainEl = document.querySelector('main');
+const navEl = document.querySelector('nav');
 
-// TODO: Multiple Arrays depending on array method?
-const numArray = [1, 2, 8, 40, 500];
-const unsortedNumArr = [500, 5, 13, 8, 29];
+const methods = [
+  {
+    method: "at",
+    description: "The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers.",
+  }
+];
 
+function init() {
+  // Refreshes navigation bar
+  navEl.innerHTML = null;
+  // Populates nav with method buttons
+  methods.forEach((method) => {
+    const navBtn = document.createElement('button');
+    navBtn.innerHTML = method.method;
+    navBtn.classList = "navBtn";
+    navEl.append(navBtn);
+  })
+}
+
+init();
