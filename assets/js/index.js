@@ -4,11 +4,11 @@ const navEl = document.querySelector('nav');
 const methods = [
   {
     method: 'at',
-    description: 'The at() method takes an integer value and returns the item at that index, allowing for positive and negative integers.',
+    description: 'The at() method takes an integer value (positive or negative) and returns the item at that index.',
   },
   {
     method: 'concat',
-    description: 'The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.',
+    description: 'The concat() method is used to merge two or more arrays, returning a new array without changing the old ones.',
   },
 ];
 
@@ -28,9 +28,11 @@ function methodInfo(obj) {
   // Populates main with method title and description
   const title = document.createElement('h2');
   const description = document.createElement('p');
+  const subheading = document.createElement('h3');
   title.innerHTML = obj.method;
   description.innerHTML = obj.description;
-  mainEl.append(title, description);
+  subheading.innerHTML = 'Example of the ' + obj.method + ' Method';
+  mainEl.append(title, description, subheading);
   // Calls function to practice method and display example
   fn[obj.method]();
 };
