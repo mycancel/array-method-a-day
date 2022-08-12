@@ -26,8 +26,11 @@ const fn = {
     const atP = document.createElement('p');
     atP.innerHTML = `
     With the example array, the method returns "${atSolved1}" when passing the integer, 2.
-    When using a negative integer (-2), the method returns "${atSolved2}".`
-    mainEl.append(atP);
+    Then, when using -2, the method returns "${atSolved2}".`
+    const atImg = document.createElement('img');
+    atImg.src = './assets/images/at.png';
+    atImg.alt = 'at method variables';
+    mainEl.append(atImg, atP);
   },
   
   concat() {
