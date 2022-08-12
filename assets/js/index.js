@@ -12,6 +12,15 @@ const methods = [
   },
 ];
 
+const fn = {
+  at() {
+    console.log('at');
+  },
+  concat() {
+    console.log('concat');
+  },
+};
+
 function methodInfo(obj) {
   // Refreshes main element
   mainEl.innerHTML = null;
@@ -21,7 +30,9 @@ function methodInfo(obj) {
   title.innerHTML = obj.method;
   description.innerHTML = obj.description;
   mainEl.append(title, description);
-  // TODO: create way to display how the method works
+  // Calls function to practice method and display example
+  fn[obj.method]();
+
 }
 
 function init() {
