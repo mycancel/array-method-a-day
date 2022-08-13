@@ -1,5 +1,5 @@
 const mainEl = document.querySelector('main');
-const navEl = document.querySelector('nav');
+const selectEl = document.querySelector('select');
 
 const methods = [
   {
@@ -54,23 +54,28 @@ function methodInfo(obj) {
 };
 
 function init() {
-  // Refreshes navigation bar
-  navEl.innerHTML = null;
-  // Populates nav with method buttons
+  // Populates method select with default option
+  const navSelected = document.createElement('option');
+  navSelected.innerHTML = "Method Select";
+  navSelected.selected = true;
+  navSelected.disabled = "disabled";
+  selectEl.append(navSelected);
+
+  // Populates method select with method information
   methods.forEach((method) => {
-    const navBtn = document.createElement('button');
-    navBtn.innerHTML = method.method;
-    navBtn.classList = 'navBtn';
-    navEl.append(navBtn);
+    const navOption = document.createElement('option');
+    navOption.innerHTML = method.method;
+    navOption.value = method.method;
+    selectEl.append(navOption);
   });
 };
 
 init();
 
-navEl.addEventListener('click', (event) => {
-  if (event.target.matches('button')) {
+selectEl.addEventListener('change', (event) => {
+  if (event.target.matches('select')) {
     // Get method information based on button pressed
-    const method = event.target.innerHTML;
+    const method = event.target.value;
     const [methodObj] = methods.filter((item) => item.method === method);
     methodInfo(methodObj);
   };
