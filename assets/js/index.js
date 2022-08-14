@@ -26,7 +26,7 @@ const fn = {
     const atP = document.createElement('p');
     atP.innerHTML = `
     With the example array, the method returns "${atSolved1}" when passing the integer, 2.
-    Then, when using -2, the method returns "${atSolved2}".`
+    Then, when using -2, the method returns "${atSolved2}".`;
     const atImg = document.createElement('img');
     atImg.src = './assets/images/at.png';
     atImg.alt = 'at method variables';
@@ -43,8 +43,14 @@ const fn = {
     // Create document elements to display example
     const concatP = document.createElement('p');
     concatP.innerHTML = `
-    This method combines the two arrays into one new array that looks like the following:`
-    mainEl.append(concatP);
+    This method combines the two arrays into one new array that looks like the following:`;
+    const concatImg1 = document.createElement('img');
+    concatImg1.src = './assets/images/concat1.png';
+    concatImg1.alt = 'concat method variables';
+    const concatImg2  = document.createElement('img');
+    concatImg2.src = './assets/images/concat2.png';
+    concatImg2.alt = `[ ${concatSolved} ]`;
+    mainEl.append(concatImg1, concatP, concatImg2);
   },
 };
 
