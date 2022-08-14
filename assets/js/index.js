@@ -34,7 +34,17 @@ const fn = {
   },
   
   concat() {
-    console.log('concat');
+    // Establish array variables
+    const concatArr1 = ["Red", "Orange", "Yellow", "Green"];
+    const concatArr2 = [1, 2, 3, 4, 5];
+    // Use method to create solved solution
+    const concatSolved = concatArr1.concat(concatArr2);
+
+    // Create document elements to display example
+    const concatP = document.createElement('p');
+    concatP.innerHTML = `
+    This method combines the two arrays into one new array that looks like the following:`
+    mainEl.append(concatP);
   },
 };
 
