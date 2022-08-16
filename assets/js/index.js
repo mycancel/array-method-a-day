@@ -94,15 +94,20 @@ const fn = {
 
   every() {
     // Establish array variables
-    const everyFn = (element) => element >= 0;
-    const everyArr1 = [ 1.1, 2.3, 3.7, 4.2, 5.9 ];
-    const everyArr2 = [ 1.1, 2.3, 3.7, -4.2, 5.9 ];
+    // const everyFn = (element) => element >= 0;
+    // const everyArr1 = [ 1.1, 2.3, 3.7, 4.2, 5.9 ];
+    // const everyArr2 = [ 1.1, 2.3, 3.7, -4.2, 5.9 ];
     // Use method to create solved solution
-    const everySolved1 = everyArr1.every(everyFn);
-    const everySolved2 = everyArr2.every(everyFn);
+    // const everySolved1 = everyArr1.every(everyFn);
+    // const everySolved2 = everyArr2.every(everyFn);
 
-    console.log(everySolved1);
-    console.log(everySolved2);
+    // Create document elements to display example
+    const everyP = document.createElement('p');
+    everyP.innerHTML = 'The function in this example checks to see if each element of the array is above zero. Therefore, the every() method returns "true" on the first array and "false" on the second array.';
+    const everyImg = document.createElement('img');
+    everyImg.src = './assets/images/every.png';
+    everyImg.alt = 'every method variables';
+    mainEl.append(everyImg, everyP);
   },
 };
 
