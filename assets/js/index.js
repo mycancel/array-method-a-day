@@ -10,6 +10,10 @@ const methods = [
     method: 'concat',
     description: 'The concat() method is used to merge two or more arrays, returning a new array without changing the old ones.',
   },
+  {
+    method: 'copyWithin',
+    description: 'The copyWithin() method shallow copies part of an array to another location in the same array and returns it without modifying its length (Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin ). The first parameter is the index where the copy will be placed within the array. The second parameter is the starting index for the copied section. The optional third parameter is the ending index (which will not be copied in the array). If the third parameter is not provided, all element until the end of the array will be copied.'
+  },
 ];
 
 const fn = {
