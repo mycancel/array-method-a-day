@@ -57,27 +57,35 @@ const fn = {
     mainEl.append(concatImg1, concatP, concatImg2);
   },
   copyWithin() {
-    // Establish array and integer variables
+    // Establish array variables
     const copyArr1 = [ "a", "b", "c", "x", "y", "z"];
-    
+    const copyArr2 = [ "a", "b", "c", "x", "y", "z"];
+
     // "c" (index 2, 3) will end the array instead of "z" (index 5)
-    const copySolved1 = copyArr1.copyWithin(5, 2, 3);
+    // const copySolved1 = copyArr1.copyWithin(5, 2, 3);
     // output: ["a", "b", "c", "x", "y", "c"]
     
-    
-    const copyArr2 = [ "a", "b", "c", "x", "y", "z"];
-    
     // "y" and "z" (index 4, end) will be copied over to index 0
-    const copySolved2 = copyArr2.copyWithin(0, 4);
+    // const copySolved2 = copyArr2.copyWithin(0, 4);
     // output: ["y", "z", "c", "x", "y", "z"]
     
     // "y" and "z" (index 0, 2) will be copied over to index 2
-    const copySolved3 = copyArr2.copyWithin(2, 0, 2);
+    // const copySolved3 = copyArr2.copyWithin(2, 0, 2);
     // output: ["y", "z", "y", "z", "y", "z"]
+
+    // Create document elements to display example
+    const copyP1 = document.createElement('p');
+    copyP1.innerHTML = 'The first example takes the string on the second index (up until but excluding the third index) and copies that item at the fifth index. In this case, the fifth index is the end of the array.';
+    const copyImg1 = document.createElement('img');
+    copyImg1.src = './assets/images/copyWithin1.png';
+    copyImg1.alt = `[ ${copyArr1} ]`;
+    const copyP2 = document.createElement('p');
+    copyP2.innerHTML = 'The second example copies more than one item. It copies the items from the fourth index to the end and places that copy at the beginning of the array (at index 0). Keep in mind that the copyWithin method changes the original array. Therefore, when the copyWithin method is used a second time in this example, the array is already altered from the first copyWithin.';
+    const copyImg2  = document.createElement('img');
+    copyImg2.src = './assets/images/copyWithin2.png';
+    copyImg2.alt = `[ ${copyArr2} ]`;
+    mainEl.append(copyP1, copyImg1, copyP2, copyImg2);
   
-    console.log(copySolved1);
-    console.log(copySolved2);
-    console.log(copySolved3);
   },
 };
 
