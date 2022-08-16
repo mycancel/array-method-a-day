@@ -91,6 +91,19 @@ const fn = {
     copyImg2.alt = `[ ${copyArr2} ]`;
     mainEl.append(copyP1, copyImg1, copyP2, copyImg2);
   },
+
+  every() {
+    // Establish array variables
+    const everyFn = (element) => element >= 0;
+    const everyArr1 = [ 1.1, 2.3, 3.7, 4.2, 5.9 ];
+    const everyArr2 = [ 1.1, 2.3, 3.7, -4.2, 5.9 ];
+    // Use method to create solved solution
+    const everySolved1 = everyArr1.every(everyFn);
+    const everySolved2 = everyArr2.every(everyFn);
+
+    console.log(everySolved1);
+    console.log(everySolved2);
+  },
 };
 
 function methodInfo(obj) {
