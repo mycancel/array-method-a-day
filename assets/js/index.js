@@ -12,7 +12,7 @@ const methods = [
   },
   {
     method: 'copyWithin',
-    description: 'The copyWithin() method shallow copies part of an array to another location in the same array and returns it without modifying its length (Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin ). The first parameter is the index where the copy will be placed within the array. The second parameter is the starting index for the copied section. The optional third parameter is the ending index (which will not be copied in the array). If the third parameter is not provided, all element until the end of the array will be copied.'
+    description: 'The copyWithin() method shallow copies part of an array to another location in the same array. The length of the array is not changed. The first parameter is the index where the copy will be placed within the array(the target). The second parameter is the starting index for the copied section. The optional third parameter is the ending index (which will not be copied in the array). If the third parameter is not provided, all element until the end of the array will be copied.'
   },
 ];
 
@@ -55,6 +55,29 @@ const fn = {
     concatImg2.src = './assets/images/concat2.png';
     concatImg2.alt = `[ ${concatSolved} ]`;
     mainEl.append(concatImg1, concatP, concatImg2);
+  },
+  copyWithin() {
+    // Establish array and integer variables
+    const copyArr1 = [ "a", "b", "c", "x", "y", "z"];
+    
+    // "c" (index 2, 3) will end the array instead of "z" (index 5)
+    const copySolved1 = copyArr1.copyWithin(5, 2, 3);
+    // output: ["a", "b", "c", "x", "y", "c"]
+    
+    
+    const copyArr2 = [ "a", "b", "c", "x", "y", "z"];
+    
+    // "y" and "z" (index 4, end) will be copied over to index 0
+    const copySolved2 = copyArr2.copyWithin(0, 4);
+    // output: ["y", "z", "c", "x", "y", "z"]
+    
+    // "y" and "z" (index 0, 2) will be copied over to index 2
+    const copySolved3 = copyArr2.copyWithin(2, 0, 2);
+    // output: ["y", "z", "y", "z", "y", "z"]
+  
+    console.log(copySolved1);
+    console.log(copySolved2);
+    console.log(copySolved3);
   },
 };
 
