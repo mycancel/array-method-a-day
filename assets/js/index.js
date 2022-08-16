@@ -14,6 +14,10 @@ const methods = [
     method: 'copyWithin',
     description: 'The copyWithin() method shallow copies part of an array to another location in the same array. The length of the array is not changed. The first parameter is the index where the copy will be placed within the array(the target). The second parameter is the starting index for the copied section. The optional third parameter is the ending index (which will not be copied in the array). If the third parameter is not provided, all element until the end of the array will be copied.'
   },
+  {
+    method: "every",
+    description: "The every() method takes in a function and returns a Boolean value if all elements of the array passes the function test.",
+  },
 ];
 
 const fn = {
@@ -56,6 +60,7 @@ const fn = {
     concatImg2.alt = `[ ${concatSolved} ]`;
     mainEl.append(concatImg1, concatP, concatImg2);
   },
+
   copyWithin() {
     // Establish array variables
     const copyArr1 = [ "a", "b", "c", "x", "y", "z"];
@@ -85,7 +90,6 @@ const fn = {
     copyImg2.src = './assets/images/copyWithin2.png';
     copyImg2.alt = `[ ${copyArr2} ]`;
     mainEl.append(copyP1, copyImg1, copyP2, copyImg2);
-  
   },
 };
 
