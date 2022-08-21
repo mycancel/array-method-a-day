@@ -116,19 +116,21 @@ const fn = {
 
   fill() {
     // Establish array variables
-    let fillArr = [0, 1, 2, 3, 4, 5];
-    const fillSolved1 = fillArr.fill('partial', 1, 3);
+    let fillArr = [' 0', ' 1', ' 2', ' 3', ' 4', ' 5'];
+    const fillSolved1 = fillArr.fill(' partial', 1, 3);
+    fillArr = [' 0', ' 1', ' 2', ' 3', ' 4', ' 5'];
+    const fillSolved2 = fillArr.fill(' toEnd', 3);
+    fillArr = [' 0', ' 1', ' 2', ' 3', ' 4', ' 5'];
+    const fillSolved3 = fillArr.fill(' all');
 
-    fillArr = [0, 1, 2, 3, 4, 5];
-    const fillSolved2 = fillArr.fill('toEnd', 3);
+    // Create document elements to display example
+    const fillP = document.createElement('p');
+    fillP.innerHTML = `In the first example of the array method, the method returns [${fillSolved1} ]. Only a portion of the array is filled with the static value of "partial" from index 1 up to, but not including, index 3. The second example defines the starting index at index 3, but does not define the ending index. This means that the array will be filled with the static value of "toEnd" starting at index 3 up to the end of the array. Therefore, the value of fillSolved2 is [${fillSolved2} ]. Finally, the third example fills all of the array because no starting or ending index is defined. This is seen in the value of fillSolved3: [${fillSolved3} ]. The fillArr variable is reassigned after each method instance because the original array is modified when the fill() method is called.`;
+    const fillImg = document.createElement('img');
+    fillImg.src = './assets/images/fill.png';
+    fillImg.alt = 'fill method variables';
+    mainEl.append(fillImg, fillP);
 
-    fillArr = [0, 1, 2, 3, 4, 5];
-    const fillSolved3 = fillArr.fill('all');
-
-
-    console.log(fillSolved1);
-    console.log(fillSolved2);
-    console.log(fillSolved3);
   },
 };
 
