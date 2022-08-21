@@ -20,7 +20,7 @@ const methods = [
   },
   {
     method: "fill",
-    description: "The fill() method fills every element of an array with a static value from the given start index to the given end index.",
+    description: "The fill() method fills every element of an array with a static value from the given start index to the given end index. The modified array is returned. If the end index is omitted, the elements will be filled with the static value from the start index to the end of the array. If neither a start index nor an end index is given, the entire array will be filled with the static value.",
   },
 ];
 
@@ -112,6 +112,23 @@ const fn = {
     everyImg.src = './assets/images/every.png';
     everyImg.alt = 'every method variables';
     mainEl.append(everyImg, everyP);
+  },
+
+  fill() {
+    // Establish array variables
+    let fillArr = [0, 1, 2, 3, 4, 5];
+    const fillSolved1 = fillArr.fill('partial', 1, 3);
+
+    fillArr = [0, 1, 2, 3, 4, 5];
+    const fillSolved2 = fillArr.fill('toEnd', 3);
+
+    fillArr = [0, 1, 2, 3, 4, 5];
+    const fillSolved3 = fillArr.fill('all');
+
+
+    console.log(fillSolved1);
+    console.log(fillSolved2);
+    console.log(fillSolved3);
   },
 };
 
