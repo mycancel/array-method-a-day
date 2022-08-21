@@ -18,6 +18,10 @@ const methods = [
     method: "every",
     description: "The every() method takes in a function and returns a Boolean value if all elements of the array passes the function test.",
   },
+  {
+    method: "every",
+    description: "The every() method takes in a function and returns a Boolean value if all elements of the array passes the function test.",
+  },
 ];
 
 const fn = {
