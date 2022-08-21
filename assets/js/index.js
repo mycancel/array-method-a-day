@@ -19,8 +19,8 @@ const methods = [
     description: "The every() method takes in a function and returns a Boolean value if all elements of the array passes the function test.",
   },
   {
-    method: "every",
-    description: "The every() method takes in a function and returns a Boolean value if all elements of the array passes the function test.",
+    method: "fill",
+    description: "The fill() method fills every element of an array with a static value from the given start index to the given end index.",
   },
 ];
 
