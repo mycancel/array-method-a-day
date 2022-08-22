@@ -24,7 +24,7 @@ const methods = [
   },
   {
     method: 'filter',
-    description: 'The filter() method takes in a function which will be applied to each element of an array. It returns an array with elements that return "true" when passed in the function.'
+    description: 'The filter() method takes in a function which will be applied to each element of an array. It returns an array with elements that return "true" when passed in the function. The returned array may also be called a shallow copy— a protion of the given array that is filtered down. If no elements pass the test, an empty array is returned.'
   },
 ];
 
@@ -142,7 +142,13 @@ const fn = {
     const filterFn = (element) => element >= 3; 
     const filterSolved = filterArr.filter(filterFn);
 
-    console.log(filterSolved);
+        // Create document elements to display example
+        const filterP = document.createElement('p');
+        filterP.innerHTML = `In this simple example of the filter method, the method returns [${filterSolved}]. This is created because the elements "3", "15", and "40" return "true" when passed into the filter function.`;
+        const filterImg = document.createElement('img');
+        filterImg.src = './assets/images/filter.png';
+        filterImg.alt = 'fill method variables';
+        mainEl.append(filterImg, filterP);
   },
 };
 
