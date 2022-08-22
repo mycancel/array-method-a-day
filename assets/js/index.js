@@ -24,7 +24,7 @@ const methods = [
   },
   {
     method: 'filter',
-    description: 'The filter() method takes in a function which will be applied to each element of an array. It returns an array with elements that pass the test in the function.'
+    description: 'The filter() method takes in a function which will be applied to each element of an array. It returns an array with elements that return "true" when passed in the function.'
   },
 ];
 
@@ -134,6 +134,15 @@ const fn = {
     fillImg.src = './assets/images/fill.png';
     fillImg.alt = 'fill method variables';
     mainEl.append(fillImg, fillP);
+  },
+
+  filter() {
+    // Establish array variables
+    const filterArr = [2, 3, 15, 40, -100];
+    const filterFn = (element) => element >= 3; 
+    const filterSolved = filterArr.filter(filterFn);
+
+    console.log(filterSolved);
   },
 };
 
