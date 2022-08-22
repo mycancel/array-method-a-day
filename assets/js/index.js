@@ -26,6 +26,10 @@ const methods = [
     method: 'filter',
     description: 'The filter() method takes in a function which will be applied to each element of an array. It returns an array with elements that return "true" when passed in the function. The returned array may also be called a shallow copy— a protion of the given array that is filtered down. If no elements pass the test, an empty array is returned.'
   },
+  {
+    method: 'find',
+    description: 'The find() method returns the first element in the array that satisfies the function passed into the method.'
+  }
 ];
 
 const fn = {
