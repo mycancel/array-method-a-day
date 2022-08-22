@@ -15,19 +15,23 @@ const methods = [
     description: 'The copyWithin() method shallow copies part of an array to another location in the same array. The length of the array is not changed. The first parameter is the index where the copy will be placed within the array(the target). The second parameter is the starting index for the copied section. The optional third parameter is the ending index (which will not be copied in the array). If the third parameter is not provided, all element until the end of the array will be copied.'
   },
   {
-    method: "every",
-    description: "The every() method takes in a function and returns a Boolean value if all elements of the array passes the function test.",
+    method: 'every',
+    description: 'The every() method takes in a function and returns a Boolean value if all elements of the array passes the function test.',
   },
   {
-    method: "fill",
-    description: "The fill() method fills every element of an array with a static value from the given start index to the given end index. The modified array is returned. If the end index is omitted, the elements will be filled with the static value from the start index to the end of the array. If neither a start index nor an end index is given, the entire array will be filled with the static value.",
+    method: 'fill',
+    description: 'The fill() method fills every element of an array with a static value from the given start index to the given end index. The modified array is returned. If the end index is omitted, the elements will be filled with the static value from the start index to the end of the array. If neither a start index nor an end index is given, the entire array will be filled with the static value.',
+  },
+  {
+    method: 'filter',
+    description: 'The filter() method takes in a function which will be applied to each element of an array. It returns an array with elements that pass the test in the function.'
   },
 ];
 
 const fn = {
   at() {
     // Establish array and integer variables
-    const atArr = ["Apple", 3, "Green", 6, "Seven"];
+    const atArr = ['Apple', 3, 'Green', 6, 'Seven'];
     const atInt1 = 2;
     const atInt2 = -2;
     // Use method to create solved solutions
@@ -47,7 +51,7 @@ const fn = {
   
   concat() {
     // Establish array variables
-    const concatArr1 = ["Red", "Orange", "Yellow", "Green"];
+    const concatArr1 = ['Red', 'Orange', 'Yellow', 'Green'];
     const concatArr2 = [1, 2, 3, 4, 5];
     // Use method to create solved solution
     const concatSolved = concatArr1.concat(concatArr2);
@@ -67,8 +71,8 @@ const fn = {
 
   copyWithin() {
     // Establish array variables
-    const copyArr1 = [ "a", "b", "c", "x", "y", "z"];
-    const copyArr2 = [ "a", "b", "c", "x", "y", "z"];
+    const copyArr1 = [ 'a', 'b', 'c', 'x', 'y', 'z'];
+    const copyArr2 = [ 'a', 'b', 'c', 'x', 'y', 'z'];
 
     // "c" (index 2, 3) will end the array instead of "z" (index 5)
     // const copySolved1 = copyArr1.copyWithin(5, 2, 3);
@@ -130,7 +134,6 @@ const fn = {
     fillImg.src = './assets/images/fill.png';
     fillImg.alt = 'fill method variables';
     mainEl.append(fillImg, fillP);
-
   },
 };
 
