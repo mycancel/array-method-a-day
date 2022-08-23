@@ -146,13 +146,28 @@ const fn = {
     const filterFn = (element) => element >= 3; 
     const filterSolved = filterArr.filter(filterFn);
 
-        // Create document elements to display example
-        const filterP = document.createElement('p');
-        filterP.innerHTML = `In this simple example of the filter method, the method returns [${filterSolved}]. This is created because the elements "3", "15", and "40" return "true" when passed into the filter function.`;
-        const filterImg = document.createElement('img');
-        filterImg.src = './assets/images/filter.png';
-        filterImg.alt = 'fill method variables';
-        mainEl.append(filterImg, filterP);
+    // Create document elements to display example
+    const filterP = document.createElement('p');
+    filterP.innerHTML = `In this simple example of the filter method, the method returns [${filterSolved}]. This is created because the elements "3", "15", and "40" return "true" when passed into the filter function.`;
+    const filterImg = document.createElement('img');
+    filterImg.src = './assets/images/filter.png';
+    filterImg.alt = 'filter method variables';
+    mainEl.append(filterImg, filterP);
+  },
+
+  find() {
+    // Establish array variables
+    // const findArr = ["red", "white", "dragon", "lizard"];
+    // const findFn = (element) => element.length > 5;
+    // const findSolved = findArr.find(findFn);
+    
+    // Create document elements to display example
+    const findP = document.createElement('p');
+    findP.innerHTML = 'For this example, the method returns "dragon" because it is the first element in the array that has a length more than 5 characters. The method does not return "red" or "white" because they do not pass the function. The method also does not return "lizard" because "dragon" comes before "lizard" in the order of the array.';
+    const findImg = document.createElement('img');
+    findImg.src = './assets/images/find.png';
+    findImg.alt = 'find method variables';
+    mainEl.append(findImg, findP);
   },
 };
 
