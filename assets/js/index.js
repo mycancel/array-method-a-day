@@ -28,7 +28,11 @@ const methods = [
   },
   {
     method: 'find',
-    description: 'The find() method returns the first element in the array that satisfies the function passed into the method.'
+    description: 'The find() method returns the first element in the array that satisfies the function passed into the method. See the findIndex method for a similar method that returns the index instead.'
+  },
+  {
+    method: 'findIndex',
+    description: 'The findIndex() method returns the index of the first element in the array that satisfies the function passed into the method. See the find method for a similar method that returns the element instead.'
   }
 ];
 
@@ -168,6 +172,21 @@ const fn = {
     findImg.src = './assets/images/find.png';
     findImg.alt = 'find method variables';
     mainEl.append(findImg, findP);
+  },
+
+  findIndex() {
+    // Establish array variables
+    // const findIndexArr = ["red", "white", "dragon", "lizard"];
+    // const findIndexFn = (element) => element.length > 5;
+    // const findIndexSolved = findIndexArr.find(findIndexFn);
+    
+    // Create document elements to display example
+    const findIndexP = document.createElement('p');
+    findIndexP.innerHTML = 'For this example, the method returns the index of 2 because "dragon" is the first element in the array that has a length more than 5 characters. The method does not return 0 or 1 because "red" or "white" do not pass the function. The method also does not return the index of 3 for the element "lizard" because "dragon" comes before "lizard" in the order of the array.';
+    const findImg = document.createElement('img');
+    findImg.src = './assets/images/findIndex.png';
+    findImg.alt = 'findIndex method variables';
+    mainEl.append(findImg, findIndexP);
   },
 };
 
