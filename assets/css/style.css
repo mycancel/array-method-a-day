@@ -1,0 +1,50 @@
+* {
+  --offwhite: rgb(243, 233, 220);
+  --coffee: rgb(192, 133, 82);
+  --darkbrown: rgb(94, 48, 35);
+  --brown: rgb(137, 87, 55);
+  --tan: rgb(218, 180, 157);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--offwhite);
+  overflow-x: hidden;
+  margin: 0;
+  /* TODO: Choose a font style */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--brown);
+  width: 100%;
+  padding: .5rem;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  color: var(--offwhite);
+  margin: 0;
+  margin-top: 1rem;
+}
+
+header p {
+  font-size: 16px;
+  color: var(--offwhite);
+}
+
+select {
+  border: none;
+  min-width: 20%;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 920px){
+  select {
+    border: none;
+    min-width: 50%;
+    font-size: 20px;
+  }
+}
