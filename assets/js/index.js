@@ -33,6 +33,10 @@ const methods = [
   {
     method: 'findIndex',
     description: 'The findIndex() method returns the index of the first element in the array that satisfies the function passed into the method. See the find method for a similar method that returns the element instead.'
+  },
+  {
+    method: 'findLast',
+    description: 'The findLast() method returns the index of the last element in the array that satisfies the function passed into the method. See the find method for a method that returns the first element instead.'
   }
 ];
 
@@ -187,6 +191,21 @@ const fn = {
     findImg.src = './assets/images/findIndex.png';
     findImg.alt = 'findIndex method variables';
     mainEl.append(findImg, findIndexP);
+  },
+
+  findLast() {
+    // Establish array variables
+    // const findLastArr = ["red", "white", "dragon", "lizard"];
+    // const findLastFn = (element) => element.length > 5;
+    // const findLastSolved = findLastArr.find(findLastFn);
+    
+    // Create document elements to display example
+    const findLastP = document.createElement('p');
+    findLastP.innerHTML = 'For this example, the method returns "lizard" because it is the last element in the array that has a length more than 5 characters. The method does not return "red" or "white" because they do not pass the function. The method also does not return "dragon" because "lizard" comes after "dragon" in the order of the array.';
+    const findLastImg = document.createElement('img');
+    findLastImg.src = './assets/images/findLast.png';
+    findLastImg.alt = 'findLast method variables';
+    mainEl.append(findLastImg, findLastP);
   },
 };
 
