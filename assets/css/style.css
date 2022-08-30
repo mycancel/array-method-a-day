@@ -67,6 +67,12 @@ p {
   font-weight: 500;
 }
 
+img {
+  width: 75%;
+  height: auto;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 920px){
   select {
     border: none;
@@ -78,5 +84,8 @@ p {
   }
   p {
     font-weight: 550;
+  }
+  img {
+    width: 100%;
   }
 }
