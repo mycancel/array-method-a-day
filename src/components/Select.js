@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SelectItems = ({ methods }) => {
+const Select = ({ methods }) => {
   return (
   <select name="method" id="method" defaultValue="Method Select">
     <option disabled="disabled" value="Method Select">Method Select</option>
@@ -9,4 +9,4 @@ const SelectItems = ({ methods }) => {
   )
 }
 
-export default SelectItems
+export default Select

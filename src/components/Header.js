@@ -1,6 +1,6 @@
 import React from 'react';
 import methods from '../methods';
-import Select from "./SelectItems"
+import Select from "./Select"
 
 const Header = () => {
   return (
