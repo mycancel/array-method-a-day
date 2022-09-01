@@ -15,12 +15,12 @@ const Main = ({ select }) => {
       {method ? 
       (
         <main>
-          <h1>{method.method}</h1>
-          <p>Hello</p>
+          <h2>{method.method}</h2>
+          <p>{method.description}</p>
+          <h3>Example of {method.method}</h3>
         </main>
       ):(
         <main>
-          <h1>Select a method to see more information</h1>
         </main>
       )}
     </>
