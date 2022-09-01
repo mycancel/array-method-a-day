@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
-const Main = () => {
+const Main = ({ select }) => {
+  useEffect(() => console.log(select), [select]);
   return (
     <main>Main</main>
   )
