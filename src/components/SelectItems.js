@@ -2,9 +2,10 @@ import React from 'react'
 
 const SelectItems = ({ methods }) => {
   return (
-    <>
-      {methods.forEach((e) => (<option value={e.method}>{e.method}</option>))}
-    </>
+  <select name="method" id="method" defaultValue="Method Select">
+    <option disabled="disabled" value="Method Select">Method Select</option>
+    {methods.map((e) => <option key={e.method}>{e.method}</option>)}
+  </select>
   )
 }
 
