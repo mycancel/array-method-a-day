@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/array-method-a-day/static/css/main.48896aaa.css",
+    "main.js": "/array-method-a-day/static/js/main.0fb9c904.js",
+    "index.html": "/array-method-a-day/index.html",
+    "main.48896aaa.css.map": "/array-method-a-day/static/css/main.48896aaa.css.map",
+    "main.0fb9c904.js.map": "/array-method-a-day/static/js/main.0fb9c904.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48896aaa.css",
+    "static/js/main.0fb9c904.js"
+  ]
+}
