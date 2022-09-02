@@ -9,6 +9,7 @@ const Main = ({ select }) => {
     setMethod(methods.find((m) => m.method === select));
   }, [select]);
 
+  // If the examples propertie in the method found exists, the main tag is populated with information
   return (
     <>
       {method?.examples ? 
@@ -26,6 +27,7 @@ const Main = ({ select }) => {
         </main>
       ):(
         <main>
+          <p style={{textAlign: "center"}}>No method selected.</p>
         </main>
       )}
     </>

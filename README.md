@@ -1,8 +1,13 @@
 # Array Method a Day
-A sandbox directory to practice an array method a day
 
 ## Description 
 
-This application is intended to be used as a reference for array methods. It uses Javascript, HTML, and CSS.
+This application is intended to be used as a reference for array methods. It uses Javascript, HTML, and CSS. In addition, React is used as a JS library to make the application more modular.
 
-I am currently in the process of converting the application to a React application in order to make it more modular.
+I am currently in the process of making a live site.
+
+## Visuals
+
+![concat](./readme-images/concat-readme.png)
+
+![findLast](./readme-images/findLast-readme.png)
