@@ -103,6 +103,20 @@ const methods = [
       }
     ],
   },
+  {
+    method: 'flat',
+    description: 'The flat() method is used to reduce and concat an array in order to remove layers of square brackets from nested arrays. The method takes in a depth level to flatten the nested arrays, and returns a new array.',
+    examples: [
+      {
+        image: './images/flat1.png',
+        text: 'The first example flattens an array that has another array in its last index. Without specifying the depth, the entire array is flattened by the depth of 1. Therefore, flatSolved is assigned [ "red", "orange", "green", "blue" ].'
+      },
+      {
+        image: './images/flat2.png',
+        text: 'The second example flattens an array that has a triple nested array in its first index. After flattened by a depth of 2,  flatSolved is assigned [ ["red", "orange"], "green", "blue" ]. The elements of "red" and "orange" are still contained within a nested array because the depth did not flatten the array entirely.' 
+      }
+    ]
+  },
 ];
 
 export default methods;
