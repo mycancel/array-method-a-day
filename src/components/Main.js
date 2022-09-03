@@ -9,8 +9,6 @@ const Main = ({ select }) => {
   useEffect(() => {
     setMethod(methods.find((m) => m.method === select));
   }, [select]);
-  console.log(method?.examples[0].image)
-  console.log(method?.method)
 
   // If the examples propertie in the method found exists, the main tag is populated with information
   return (
