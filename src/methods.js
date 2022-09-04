@@ -117,6 +117,16 @@ const methods = [
       }
     ]
   },
+  {
+    method: 'flatmap',
+    description: 'The flatmap() method is a combination of the methods flat() and map(). It returns a new array after applying a function to each element of he array. Then, the array is flattened by one level. Possible parameters include a callback function, current value, index, and array.',
+    examples: [
+      {
+        image: './images/flatMap.png',
+        text: 'This example calls both the map() and flatmap() methods in order to highlight the difference between their outputs. The callback function also calls the split() string method which returns an array. While the map() takes each element and splits them at each space, the method returns an array which contains nested arrays. On the other hand, the flatmap() method returns an array with no nested arrays.'
+      }
+    ]
+  },
 ];
 
 export default methods;
