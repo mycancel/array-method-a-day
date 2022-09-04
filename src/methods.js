@@ -105,7 +105,7 @@ const methods = [
   },
   {
     method: 'flat',
-    description: 'The flat() method is used to reduce and concat an array in order to remove layers of square brackets from nested arrays. The method takes in a depth level to flatten the nested arrays, and returns a new array.',
+    description: 'The flat() method is used to reduce and concat an array in order to remove layers of square brackets from nested arrays. The method takes in a depth level to flatten the nested arrays, and returns a new array. The method flatmap() uses this method as well as the map() method.',
     examples: [
       {
         image: './images/flat1.png',
