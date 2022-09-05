@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/array-method-a-day/static/css/main.48896aaa.css",
-    "main.js": "/array-method-a-day/static/js/main.33655f54.js",
+    "main.js": "/array-method-a-day/static/js/main.e2adb75e.js",
     "index.html": "/array-method-a-day/index.html",
     "main.48896aaa.css.map": "/array-method-a-day/static/css/main.48896aaa.css.map",
-    "main.33655f54.js.map": "/array-method-a-day/static/js/main.33655f54.js.map"
+    "main.e2adb75e.js.map": "/array-method-a-day/static/js/main.e2adb75e.js.map"
   },
   "entrypoints": [
     "static/css/main.48896aaa.css",
-    "static/js/main.33655f54.js"
+    "static/js/main.e2adb75e.js"
   ]
 }
