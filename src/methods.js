@@ -127,6 +127,16 @@ const methods = [
       }
     ]
   },
+  {
+    method: 'forEach',
+    description: 'The forEach() method is similar to a for loop because it executes a function for each element of the array. However, unlike a for loop, it cannot be exited early (with the break statement), it is slower than a for loop, and it does not work with the await keyword. However, it reduces the amount of code to write when applying a for loop function to an array.',
+    examples: [
+      {
+        image: './images/forEach.png',
+        text: 'In this example, the function is executed with each element of the array. Therefore, the console will show four logs of "true".'
+      }
+    ]
+  }
 ];
 
 export default methods;
