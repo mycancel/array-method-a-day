@@ -136,6 +136,20 @@ const methods = [
         text: 'In this example, the function is executed with each element of the array. Therefore, the console will show four logs of "true".'
       }
     ]
+  },
+  {
+    method: 'Array.from',
+    description: 'The Array.from() method creates arrays from iterable objects (like Map and Set) or array-like objects (that have a length property and indexed elements, like strings). It takes in the object, but can also take in a function optionally to execute a map function on each element of the array.',
+    examples: [
+      {
+        image: './images/from1.png',
+        text: 'This example takes in a string and separates each letter to form an array. This is an alternative to the string method split().'
+      },
+      {
+        image: './images/from2.png',
+        text: 'This example takes in the same string as the first example, but before the array is completely constructed, it executes a function for each element of the array. Unlike a function in the map() method, a function in the from() method does not have the array as one of its parameters.'
+      }
+    ]
   }
 ];
 
