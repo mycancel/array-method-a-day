@@ -150,6 +150,16 @@ const methods = [
         text: 'This example takes in the same string as the first example, but before the array is completely constructed, it executes a function for each element of the array. Unlike a function in the map() method, a function in the from() method does not have the array as one of its parameters.'
       }
     ]
+  },
+  {
+    method: 'includes',
+    description: 'The includes() method returns a boolean value depending on if the array contains an element with a certain value.',
+    examples: [
+      {
+        image: './images/includes.png',
+        text: 'When the method is first executed, it searches the array for "74" and returns "true" because the array includes that value. However, when the method is executed again, it searches for "Tuna" — a value not included in the array. Thus, the method returns "false".'
+      }
+    ]
   }
 ];
 
