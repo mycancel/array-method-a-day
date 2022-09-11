@@ -160,6 +160,16 @@ const methods = [
         text: 'When the method is first executed, it searches the array for "74" and returns "true" because the array includes that value. However, when the method is executed again, it searches for "Tuna" — a value not included in the array. Thus, the method returns "false".'
       }
     ]
+  },
+  {
+    method: 'indexOf',
+    description: 'The indexOf() method returns the index of the element in the array. If that element could not be found, "-1" is returned. If multiple elements in the array have the same value, the index of the first element is returned.',
+    examples: [
+      {
+        image: './images/indexOf.png',
+        text: 'When indexOf() is first called, it searches the array for an element that matches the value of "Elves". This appears twice in the array; however, the method returns the index of the first instance of "Elves" in the array. When indexOf() is called a second time, it is passed a value which is not present in the array. Therefore, the method returns "-1".'
+      }
+    ]
   }
 ];
 
