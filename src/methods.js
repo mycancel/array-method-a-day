@@ -170,6 +170,16 @@ const methods = [
         text: 'When indexOf() is first called, it searches the array for an element that matches the value of "Elves". This appears twice in the array; however, the method returns the index of the first instance of "Elves" in the array. When indexOf() is called a second time, it is passed a value which is not present in the array. Therefore, the method returns "-1".'
       }
     ]
+  },
+  {
+    method: 'Array.isArray()',
+    description: 'Array.isArray returns a boolean value depending on whether the value passed into the method is (or is not) an array.',
+    examples: [
+      {
+        image: './images/isArray.png',
+        text: 'Since the first value is an array, the method returns "true." However, it returns false for the second variable because that value is not an array.'
+      }
+    ]
   }
 ];
 
