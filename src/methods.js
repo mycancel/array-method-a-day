@@ -172,12 +172,22 @@ const methods = [
     ]
   },
   {
-    method: 'Array.isArray()',
-    description: 'Array.isArray returns a boolean value depending on whether the value passed into the method is (or is not) an array.',
+    method: 'Array.isArray',
+    description: 'Array.isArray() returns a boolean value depending on whether the value passed into the method is (or is not) an array.',
     examples: [
       {
         image: './images/isArray.png',
         text: 'Since the first value is an array, the method returns "true." However, it returns false for the second variable because that value is not an array.'
+      }
+    ]
+  },
+  {
+    method: 'join',
+    description: 'The join() method returns a new string created by concatenating all elements in an array. If a separator is passed as a string into the method, the returned string value concats each element of the array with the separator in between. If nothing is passed into the method, the steing will be separated by commas.',
+    examples: [
+      {
+        image: './images/join.png',
+        text: 'Without passing anything into the join() method, the string value separates each element of the joinElements array with commas. When a string is passed into the method, that string replaces those commas. Therefore, when an empty string is passed into the method, all of the elements are directly next to each other. When a string containing a dash is passed into the method, the dash separates the elements. When a string containing a space is passed into the method, the space separates the elements. By using the join() method in this way, the returned string looks most similar to a sentence.'
       }
     ]
   }
